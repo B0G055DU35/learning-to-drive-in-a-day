@@ -7,6 +7,7 @@ and reimplements learning method.
 """
 
 import time
+import car
 
 import numpy as np
 from mpi4py import MPI
