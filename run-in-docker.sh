@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Usage: ./run-in-docker.sh
-#
-# NOTE: Assumed that laptop has Intel Graphics. Remove "/dev/dri" mount to use virtual grpahics (slow).
-
 docker run --net host \
     --rm \
     -ti \
@@ -16,3 +12,5 @@ docker run --net host \
     -w /code \
     --device=/dev/dri:/dev/dri \
         learning-to-drive-in-a-day ./run.py
+        
+#I dunno how to drive :(
